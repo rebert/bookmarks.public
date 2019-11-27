@@ -145,7 +145,7 @@ function addBookmark() {
     }
 
     var current = document.getElementById("bookmarks").innerHTML;
-    var entry = '<li id="newOne" title="' + tags + '" time="' + secs + '"><a href="' + link + '">' + name + '</a></li>';
+    var entry = '<li id="newOne" title="' + tags + '" time="' + secs + '"><a href="' + link + '" target="_blank">' + name + '</a></li>';
     current = current + entry;
     document.getElementById("bookmarks").innerHTML = current;
     populateTags();
